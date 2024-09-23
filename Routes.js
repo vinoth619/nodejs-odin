@@ -8,10 +8,6 @@ const Routeshandle=(req,res)=>{
     const urlpath = req.url
 
 
-    const change=(a)=>{
-        alert(a)
-    }
-
     if(urlpath=== "/"){
         fs.readFile("./home.html", (err, data)=>{
             res.setHeader("Content-Type","text/html")
