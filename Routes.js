@@ -16,13 +16,12 @@ const Routeshandle=(req,res)=>{
         fs.readFile("./index.html", (err, data)=>{
             res.setHeader("Content-Type","text/html")
             res.statusCode=200,
-
             res.write(data);
             res.end()
         })
     }
     else if(urlpath=== "/about"){
-           fs.readFile("./about.html", (err, data)=>{
+           fs.readFile("./About.html", (err, data)=>{
             res.setHeader("Content-Type","text/html")
             res.statusCode=200,
             res.write(data)
